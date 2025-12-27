@@ -196,7 +196,6 @@ FreeLong was designed to extend beyond training length. You may be able to gener
 
 - FreeLong paper: [arxiv.org/abs/2407.19918](https://arxiv.org/abs/2407.19918)
 - Wan 2.2: Alibaba
-- Implementation: Collaborative human-AI development
 
 ## License
 
