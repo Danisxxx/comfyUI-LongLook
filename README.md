@@ -137,11 +137,11 @@ Creates i2v conditioning from previous chunk's last frame.
 
 ## Workflows
 
-### Single Shot (`Single-Shot-Example.json`)
-Single generation with FreeLong for improved motion consistency.
-
 ### Chained Generation (`Car-Racing-Example.json`)
 Multi-chunk continuation with different prompts per chunk for scene evolution.
+
+### Single Shot (`Single-Shot-Example.json`)
+Single generation with FreeLong for improved motion consistency.  This workflow shows you a short clip with and without FeeLong node activation for comparison of 81+ frame gens
 
 ## Parameter Tuning
 
