@@ -137,16 +137,11 @@ Creates i2v conditioning from previous chunk's last frame.
 
 ## Workflows
 
-### Basic Continuation (`anchor_blend_workflow.json`)
-Two chunks, shared prompts. Extends a single scene.
+### Single Shot (`Single-Shot-Example.json`)
+Single generation with FreeLong for improved motion consistency.
 
-### Multi-Prompt (`multi_prompt_workflow.json`)
-Different prompt per chunk for scene evolution:
-- Chunk 1: "car driving on highway"
-- Chunk 2: "car enters city streets"
-- Chunk 3: "car parks at destination"
-
-Same car, smooth motion, continuous narrative.
+### Chained Generation (`Car-Racing-Example.json`)
+Multi-chunk continuation with different prompts per chunk for scene evolution.
 
 ## Parameter Tuning
 
