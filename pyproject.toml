@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-longlook"
+version = "3.0.0"
+description = "FreeLong spectral blending for Wan 2.2 video generation with improved motion consistency and prompt adherence"
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.urls]
+Repository = "https://github.com/shootthesound/comfyUI-LongLook"
+
+[tool.comfy]
+PublisherId = "shootthesound"
+DisplayName = "ComfyUI-LongLook"
+Icon = ""
