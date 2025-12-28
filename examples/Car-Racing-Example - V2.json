@@ -1195,13 +1195,13 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "Chunk2_00218.mp4",
+            "filename": "Chunk2_00221.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4",
             "frame_rate": 16,
-            "workflow": "Chunk2_00218.png",
-            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk2_00218.mp4"
+            "workflow": "Chunk2_00221.png",
+            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk2_00221.mp4"
           }
         }
       }
@@ -1278,13 +1278,13 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "Chunk3_00022.mp4",
+            "filename": "Chunk3_00024.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4",
             "frame_rate": 16,
-            "workflow": "Chunk3_00022.png",
-            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk3_00022.mp4"
+            "workflow": "Chunk3_00024.png",
+            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk3_00024.mp4"
           }
         }
       }
@@ -1361,13 +1361,13 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "Chunk4_00021.mp4",
+            "filename": "Chunk4_00023.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4",
             "frame_rate": 16,
-            "workflow": "Chunk4_00021.png",
-            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk4_00021.mp4"
+            "workflow": "Chunk4_00023.png",
+            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk4_00023.mp4"
           }
         }
       }
@@ -1444,13 +1444,13 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "Chunk5_00022.mp4",
+            "filename": "Chunk5_00024.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4",
             "frame_rate": 16,
-            "workflow": "Chunk5_00022.png",
-            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk5_00022.mp4"
+            "workflow": "Chunk5_00024.png",
+            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk5_00024.mp4"
           }
         }
       }
@@ -1527,13 +1527,13 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "Chunk6_00025.mp4",
+            "filename": "Chunk6_00027.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4",
             "frame_rate": 16,
-            "workflow": "Chunk6_00025.png",
-            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk6_00025.mp4"
+            "workflow": "Chunk6_00027.png",
+            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk6_00027.mp4"
           }
         }
       }
@@ -1610,13 +1610,13 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "Chunk7_00022.mp4",
+            "filename": "Chunk7_00024.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4",
             "frame_rate": 16,
-            "workflow": "Chunk7_00022.png",
-            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk7_00022.mp4"
+            "workflow": "Chunk7_00024.png",
+            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk7_00024.mp4"
           }
         }
       }
@@ -2186,13 +2186,13 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "Chunk1_00205.mp4",
+            "filename": "Chunk1_00208.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4",
             "frame_rate": 16,
-            "workflow": "Chunk1_00205.png",
-            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk1_00205.mp4"
+            "workflow": "Chunk1_00208.png",
+            "fullpath": "S:\\Auto\\ComfyUI_windows_portable\\ComfyUI\\output\\Chunk1_00208.mp4"
           }
         }
       }
@@ -2843,13 +2843,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -2889,13 +2890,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -3056,13 +3058,14 @@
       ],
       "title": "High Lora Model",
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -3143,13 +3146,14 @@
       ],
       "title": "Low Lora Model",
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -3669,13 +3673,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -3715,13 +3720,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -3761,13 +3767,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -3807,13 +3814,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -3853,13 +3861,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -3899,13 +3908,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -3945,13 +3955,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -3991,13 +4002,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -4037,13 +4049,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -4083,13 +4096,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -4129,13 +4143,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -4175,13 +4190,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfy-core",
         "ver": "0.5.1",
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "FLUX\\1950s Hollywood glamour..safetensors",
@@ -4571,7 +4587,7 @@
         {
           "name": "input1",
           "shape": 7,
-          "type": "MODEL",
+          "type": "*",
           "link": 654
         },
         {
@@ -4588,8 +4604,8 @@
       "outputs": [
         {
           "label": "MODEL",
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "selected_value",
+          "type": "*",
           "links": [
             656
           ]
@@ -4607,13 +4623,14 @@
       ],
       "title": "Low Noise GGUF OR REGULAR",
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfyui-impact-pack",
         "ver": "8.28.0",
-        "Node name for S&R": "ImpactSwitch"
+        "Node name for S&R": "ImpactSwitch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         1,
@@ -4925,9 +4942,10 @@
       ],
       "title": "FreeLong (Spectral Blend)",
       "properties": {
-        "aux_id": "shootthesound/comfyUI-LongLook",
+        "cnr_id": "comfyui-longlook",
         "ver": "6ee1043742071907c8e334a29e21a40a6a0f4e84",
         "Node name for S&R": "WanFreeLong",
+        "aux_id": "shootthesound/comfyUI-LongLook",
         "ue_properties": {
           "widget_ue_connectable": {},
           "version": "7.5.2",
@@ -5502,13 +5520,14 @@
         }
       ],
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfyui-kjnodes",
         "ver": "1.2.2",
-        "Node name for S&R": "ColorMatch"
+        "Node name for S&R": "ColorMatch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         "mkl",
@@ -5533,7 +5552,8 @@
       "inputs": [
         {
           "name": "input1",
-          "type": "MODEL",
+          "shape": 7,
+          "type": "*",
           "link": 662
         },
         {
@@ -5550,8 +5570,8 @@
       "outputs": [
         {
           "label": "MODEL",
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "selected_value",
+          "type": "*",
           "links": [
             649
           ]
@@ -5569,13 +5589,14 @@
       ],
       "title": "High Noise GGUF OR REGULAR",
       "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
         "cnr_id": "comfyui-impact-pack",
         "ver": "8.28.0",
-        "Node name for S&R": "ImpactSwitch"
+        "Node name for S&R": "ImpactSwitch",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
       },
       "widgets_values": [
         1,
@@ -5691,7 +5712,7 @@
       ],
       "size": [
         210,
-        278
+        294
       ],
       "flags": {},
       "order": 105,
@@ -5750,7 +5771,6 @@
           ]
         }
       ],
-      "title": "Chunk 2",
       "properties": {
         "proxyWidgets": [
           [
@@ -5774,13 +5794,13 @@
             "video_length"
           ]
         ],
+        "cnr_id": "comfy-core",
+        "ver": "0.5.1",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
           "version": "7.5.2"
-        },
-        "cnr_id": "comfy-core",
-        "ver": "0.5.1"
+        }
       },
       "widgets_values": [
         512,
@@ -5796,7 +5816,7 @@
       ],
       "size": [
         210,
-        278
+        294
       ],
       "flags": {},
       "order": 106,
@@ -5900,7 +5920,7 @@
       ],
       "size": [
         210,
-        278
+        294
       ],
       "flags": {},
       "order": 109,
@@ -6004,7 +6024,7 @@
       ],
       "size": [
         210,
-        278
+        294
       ],
       "flags": {},
       "order": 113,
@@ -6108,7 +6128,7 @@
       ],
       "size": [
         210,
-        278
+        294
       ],
       "flags": {},
       "order": 116,
@@ -6204,110 +6224,6 @@
       ]
     },
     {
-      "id": 144,
-      "type": "b6720a03-b3c2-4792-9e32-c2addcd5c9d4",
-      "pos": [
-        7072.129991796416,
-        -203.44295243524408
-      ],
-      "size": [
-        210,
-        278
-      ],
-      "flags": {},
-      "order": 119,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "anchor_images",
-          "type": "IMAGE",
-          "link": 352
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 479
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "widget": {
-            "name": "width"
-          },
-          "link": 499
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "widget": {
-            "name": "height"
-          },
-          "link": 508
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 640
-        },
-        {
-          "name": "model_1",
-          "type": "MODEL",
-          "link": 641
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 453
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            348,
-            353,
-            543
-          ]
-        }
-      ],
-      "properties": {
-        "proxyWidgets": [
-          [
-            "-1",
-            "width"
-          ],
-          [
-            "-1",
-            "height"
-          ],
-          [
-            "127",
-            "text"
-          ],
-          [
-            "123",
-            "text"
-          ],
-          [
-            "124",
-            "video_length"
-          ]
-        ],
-        "cnr_id": "comfy-core",
-        "ver": "0.5.1",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.5.2"
-        }
-      },
-      "widgets_values": [
-        512,
-        512
-      ]
-    },
-    {
       "id": 149,
       "type": "a4727103-5706-4168-b05b-00c73effa805",
       "pos": [
@@ -6316,7 +6232,7 @@
       ],
       "size": [
         210,
-        278
+        294
       ],
       "flags": {
         "collapsed": false
@@ -6521,6 +6437,110 @@
       ],
       "color": "#322",
       "bgcolor": "#533"
+    },
+    {
+      "id": 144,
+      "type": "b6720a03-b3c2-4792-9e32-c2addcd5c9d4",
+      "pos": [
+        7072.129991796416,
+        -203.44295243524408
+      ],
+      "size": [
+        210,
+        294
+      ],
+      "flags": {},
+      "order": 119,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anchor_images",
+          "type": "IMAGE",
+          "link": 352
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 479
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 499
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 508
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 640
+        },
+        {
+          "name": "model_1",
+          "type": "MODEL",
+          "link": 641
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 453
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            348,
+            353,
+            543
+          ]
+        }
+      ],
+      "properties": {
+        "proxyWidgets": [
+          [
+            "-1",
+            "width"
+          ],
+          [
+            "-1",
+            "height"
+          ],
+          [
+            "127",
+            "text"
+          ],
+          [
+            "123",
+            "text"
+          ],
+          [
+            "124",
+            "video_length"
+          ]
+        ],
+        "cnr_id": "comfy-core",
+        "ver": "0.5.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        512,
+        512
+      ]
     }
   ],
   "links": [
@@ -7810,7 +7830,7 @@
               190
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -7886,9 +7906,10 @@
             ],
             "title": "Continuation Conditioning",
             "properties": {
-              "aux_id": "shootthesound/comfyUI-LongLook",
+              "cnr_id": "comfyui-longlook",
               "ver": "6ee1043742071907c8e334a29e21a40a6a0f4e84",
               "Node name for S&R": "WanContinuationConditioning",
+              "aux_id": "shootthesound/comfyUI-LongLook",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
@@ -7915,7 +7936,7 @@
               334
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [
               {
@@ -7991,7 +8012,7 @@
               100
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [
               {
@@ -8040,7 +8061,7 @@
               88
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -8089,7 +8110,7 @@
               334
             ],
             "flags": {},
-            "order": 4,
+            "order": 3,
             "mode": 0,
             "inputs": [
               {
@@ -8165,7 +8186,7 @@
               50
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [
               {
@@ -8218,7 +8239,7 @@
               126
             ],
             "flags": {},
-            "order": 0,
+            "order": 6,
             "mode": 0,
             "inputs": [
               {
@@ -8245,13 +8266,13 @@
               }
             ],
             "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.2.2",
+              "Node name for S&R": "ColorMatch",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfyui-kjnodes",
-              "ver": "1.2.2",
-              "Node name for S&R": "ColorMatch"
+              }
             },
             "widgets_values": [
               "mkl",
@@ -8615,7 +8636,7 @@
               190
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -8691,9 +8712,10 @@
             ],
             "title": "Continuation Conditioning",
             "properties": {
-              "aux_id": "shootthesound/comfyUI-LongLook",
+              "cnr_id": "comfyui-longlook",
               "ver": "6ee1043742071907c8e334a29e21a40a6a0f4e84",
               "Node name for S&R": "WanContinuationConditioning",
+              "aux_id": "shootthesound/comfyUI-LongLook",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
@@ -8720,7 +8742,7 @@
               334
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [
               {
@@ -8796,7 +8818,7 @@
               100
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [
               {
@@ -8845,7 +8867,7 @@
               88
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -8894,7 +8916,7 @@
               334
             ],
             "flags": {},
-            "order": 4,
+            "order": 3,
             "mode": 0,
             "inputs": [
               {
@@ -8970,7 +8992,7 @@
               50
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [
               {
@@ -9024,7 +9046,7 @@
               126
             ],
             "flags": {},
-            "order": 0,
+            "order": 6,
             "mode": 0,
             "inputs": [
               {
@@ -9051,13 +9073,13 @@
               }
             ],
             "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.2.2",
+              "Node name for S&R": "ColorMatch",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfyui-kjnodes",
-              "ver": "1.2.2",
-              "Node name for S&R": "ColorMatch"
+              }
             },
             "widgets_values": [
               "mkl",
@@ -9421,7 +9443,7 @@
               190
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -9497,9 +9519,10 @@
             ],
             "title": "Continuation Conditioning",
             "properties": {
-              "aux_id": "shootthesound/comfyUI-LongLook",
+              "cnr_id": "comfyui-longlook",
               "ver": "6ee1043742071907c8e334a29e21a40a6a0f4e84",
               "Node name for S&R": "WanContinuationConditioning",
+              "aux_id": "shootthesound/comfyUI-LongLook",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
@@ -9526,7 +9549,7 @@
               334
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [
               {
@@ -9602,7 +9625,7 @@
               100
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [
               {
@@ -9651,7 +9674,7 @@
               88
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -9700,7 +9723,7 @@
               334
             ],
             "flags": {},
-            "order": 4,
+            "order": 3,
             "mode": 0,
             "inputs": [
               {
@@ -9776,7 +9799,7 @@
               50
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [
               {
@@ -9829,7 +9852,7 @@
               126
             ],
             "flags": {},
-            "order": 0,
+            "order": 6,
             "mode": 0,
             "inputs": [
               {
@@ -9856,13 +9879,13 @@
               }
             ],
             "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.2.2",
+              "Node name for S&R": "ColorMatch",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfyui-kjnodes",
-              "ver": "1.2.2",
-              "Node name for S&R": "ColorMatch"
+              }
             },
             "widgets_values": [
               "mkl",
@@ -10226,7 +10249,7 @@
               190
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -10302,9 +10325,10 @@
             ],
             "title": "Continuation Conditioning",
             "properties": {
-              "aux_id": "shootthesound/comfyUI-LongLook",
+              "cnr_id": "comfyui-longlook",
               "ver": "6ee1043742071907c8e334a29e21a40a6a0f4e84",
               "Node name for S&R": "WanContinuationConditioning",
+              "aux_id": "shootthesound/comfyUI-LongLook",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
@@ -10331,7 +10355,7 @@
               334
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [
               {
@@ -10407,7 +10431,7 @@
               100
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [
               {
@@ -10456,7 +10480,7 @@
               88
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -10505,7 +10529,7 @@
               334
             ],
             "flags": {},
-            "order": 4,
+            "order": 3,
             "mode": 0,
             "inputs": [
               {
@@ -10581,7 +10605,7 @@
               50
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [
               {
@@ -10634,7 +10658,7 @@
               126
             ],
             "flags": {},
-            "order": 0,
+            "order": 6,
             "mode": 0,
             "inputs": [
               {
@@ -10661,13 +10685,13 @@
               }
             ],
             "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.2.2",
+              "Node name for S&R": "ColorMatch",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfyui-kjnodes",
-              "ver": "1.2.2",
-              "Node name for S&R": "ColorMatch"
+              }
             },
             "widgets_values": [
               "mkl",
@@ -11031,7 +11055,7 @@
               190
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -11107,9 +11131,10 @@
             ],
             "title": "Continuation Conditioning",
             "properties": {
-              "aux_id": "shootthesound/comfyUI-LongLook",
+              "cnr_id": "comfyui-longlook",
               "ver": "6ee1043742071907c8e334a29e21a40a6a0f4e84",
               "Node name for S&R": "WanContinuationConditioning",
+              "aux_id": "shootthesound/comfyUI-LongLook",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
@@ -11136,7 +11161,7 @@
               334
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [
               {
@@ -11212,7 +11237,7 @@
               100
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [
               {
@@ -11244,7 +11269,7 @@
               }
             },
             "widgets_values": [
-              "red sports car driving fast. back of the car visible. driving fast"
+              "red sports car driving fast around a sharp corner."
             ],
             "color": "#326",
             "bgcolor": "#537"
@@ -11261,7 +11286,7 @@
               88
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -11299,82 +11324,6 @@
             "bgcolor": "#533"
           },
           {
-            "id": 126,
-            "type": "KSamplerAdvanced",
-            "pos": [
-              3975.1093434077297,
-              1962.8384643460975
-            ],
-            "size": [
-              252.353515625,
-              334
-            ],
-            "flags": {},
-            "order": 4,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "model",
-                "name": "model",
-                "type": "MODEL",
-                "link": 310
-              },
-              {
-                "localized_name": "positive",
-                "name": "positive",
-                "type": "CONDITIONING",
-                "link": 298
-              },
-              {
-                "localized_name": "negative",
-                "name": "negative",
-                "type": "CONDITIONING",
-                "link": 299
-              },
-              {
-                "localized_name": "latent_image",
-                "name": "latent_image",
-                "type": "LATENT",
-                "link": 300
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "LATENT",
-                "name": "LATENT",
-                "type": "LATENT",
-                "links": [
-                  297
-                ]
-              }
-            ],
-            "title": "Sampler 2A (High Noise)",
-            "properties": {
-              "cnr_id": "comfy-core",
-              "ver": "0.5.1",
-              "Node name for S&R": "KSamplerAdvanced",
-              "ue_properties": {
-                "widget_ue_connectable": {},
-                "version": "7.5.2",
-                "input_ue_unconnectable": {}
-              }
-            },
-            "widgets_values": [
-              "enable",
-              292278176172562,
-              "fixed",
-              8,
-              1,
-              "euler",
-              "simple",
-              0,
-              4,
-              "enable"
-            ],
-            "color": "#223",
-            "bgcolor": "#335"
-          },
-          {
             "id": 128,
             "type": "VAEDecode",
             "pos": [
@@ -11386,7 +11335,7 @@
               50
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [
               {
@@ -11439,7 +11388,7 @@
               126
             ],
             "flags": {},
-            "order": 0,
+            "order": 6,
             "mode": 0,
             "inputs": [
               {
@@ -11466,19 +11415,95 @@
               }
             ],
             "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.2.2",
+              "Node name for S&R": "ColorMatch",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfyui-kjnodes",
-              "ver": "1.2.2",
-              "Node name for S&R": "ColorMatch"
+              }
             },
             "widgets_values": [
               "mkl",
               0.2,
               true
             ]
+          },
+          {
+            "id": 126,
+            "type": "KSamplerAdvanced",
+            "pos": [
+              3975.1093434077297,
+              1962.8384643460975
+            ],
+            "size": [
+              252.353515625,
+              334
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 310
+              },
+              {
+                "localized_name": "positive",
+                "name": "positive",
+                "type": "CONDITIONING",
+                "link": 298
+              },
+              {
+                "localized_name": "negative",
+                "name": "negative",
+                "type": "CONDITIONING",
+                "link": 299
+              },
+              {
+                "localized_name": "latent_image",
+                "name": "latent_image",
+                "type": "LATENT",
+                "link": 300
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "LATENT",
+                "name": "LATENT",
+                "type": "LATENT",
+                "links": [
+                  297
+                ]
+              }
+            ],
+            "title": "Sampler 2A (High Noise)",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.5.1",
+              "Node name for S&R": "KSamplerAdvanced",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.5.2",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "enable",
+              292278176172563,
+              "fixed",
+              8,
+              1,
+              "euler",
+              "simple",
+              0,
+              4,
+              "enable"
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
           }
         ],
         "groups": [
@@ -11836,7 +11861,7 @@
               190
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -11912,9 +11937,10 @@
             ],
             "title": "Continuation Conditioning",
             "properties": {
-              "aux_id": "shootthesound/comfyUI-LongLook",
+              "cnr_id": "comfyui-longlook",
               "ver": "6ee1043742071907c8e334a29e21a40a6a0f4e84",
               "Node name for S&R": "WanContinuationConditioning",
+              "aux_id": "shootthesound/comfyUI-LongLook",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
@@ -11941,7 +11967,7 @@
               334
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [
               {
@@ -12017,7 +12043,7 @@
               100
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [
               {
@@ -12066,7 +12092,7 @@
               88
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -12115,7 +12141,7 @@
               334
             ],
             "flags": {},
-            "order": 4,
+            "order": 3,
             "mode": 0,
             "inputs": [
               {
@@ -12191,7 +12217,7 @@
               50
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [
               {
@@ -12244,7 +12270,7 @@
               126
             ],
             "flags": {},
-            "order": 0,
+            "order": 6,
             "mode": 0,
             "inputs": [
               {
@@ -12271,13 +12297,13 @@
               }
             ],
             "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.2.2",
+              "Node name for S&R": "ColorMatch",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfyui-kjnodes",
-              "ver": "1.2.2",
-              "Node name for S&R": "ColorMatch"
+              }
             },
             "widgets_values": [
               "mkl",
@@ -12641,7 +12667,7 @@
               100
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [
               {
@@ -12663,14 +12689,14 @@
             ],
             "title": "Chunk 2 Positive",
             "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.5.1",
+              "Node name for S&R": "CLIPTextEncode",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfy-core",
-              "ver": "0.5.1",
-              "Node name for S&R": "CLIPTextEncode"
+              }
             },
             "widgets_values": [
               "red sports car driving fast, drone tracking shot"
@@ -12690,7 +12716,7 @@
               88
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -12712,14 +12738,14 @@
             ],
             "title": "Chunk 2 Negative",
             "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.5.1",
+              "Node name for S&R": "CLIPTextEncode",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfy-core",
-              "ver": "0.5.1",
-              "Node name for S&R": "CLIPTextEncode"
+              }
             },
             "widgets_values": [
               ""
@@ -12739,7 +12765,7 @@
               190
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -12815,14 +12841,15 @@
             ],
             "title": "Continuation Conditioning",
             "properties": {
+              "cnr_id": "comfyui-longlook",
+              "ver": "6ee1043742071907c8e334a29e21a40a6a0f4e84",
+              "Node name for S&R": "WanContinuationConditioning",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
                 "input_ue_unconnectable": {}
               },
-              "aux_id": "shootthesound/comfyUI-LongLook",
-              "ver": "6ee1043742071907c8e334a29e21a40a6a0f4e84",
-              "Node name for S&R": "WanContinuationConditioning"
+              "aux_id": "shootthesound/comfyUI-LongLook"
             },
             "widgets_values": [
               512,
@@ -12844,7 +12871,7 @@
               334
             ],
             "flags": {},
-            "order": 4,
+            "order": 3,
             "mode": 0,
             "inputs": [
               {
@@ -12884,14 +12911,14 @@
             ],
             "title": "Sampler 2A (High Noise)",
             "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.5.1",
+              "Node name for S&R": "KSamplerAdvanced",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfy-core",
-              "ver": "0.5.1",
-              "Node name for S&R": "KSamplerAdvanced"
+              }
             },
             "widgets_values": [
               "enable",
@@ -12920,7 +12947,7 @@
               50
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [
               {
@@ -12948,15 +12975,16 @@
               }
             ],
             "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.5.1",
+              "Node name for S&R": "VAEDecode",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfy-core",
-              "ver": "0.5.1",
-              "Node name for S&R": "VAEDecode"
+              }
             },
+            "widgets_values": [],
             "color": "#323",
             "bgcolor": "#535"
           },
@@ -12972,7 +13000,7 @@
               334
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [
               {
@@ -13012,14 +13040,14 @@
             ],
             "title": "Sampler 2B (Low Noise)",
             "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.5.1",
+              "Node name for S&R": "KSamplerAdvanced",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "version": "7.5.2",
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfy-core",
-              "ver": "0.5.1",
-              "Node name for S&R": "KSamplerAdvanced"
+              }
             },
             "widgets_values": [
               "disable",
@@ -13048,7 +13076,7 @@
               126
             ],
             "flags": {},
-            "order": 0,
+            "order": 6,
             "mode": 0,
             "inputs": [
               {
@@ -13075,13 +13103,13 @@
               }
             ],
             "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.2.2",
+              "Node name for S&R": "ColorMatch",
               "ue_properties": {
                 "widget_ue_connectable": {},
                 "input_ue_unconnectable": {}
-              },
-              "cnr_id": "comfyui-kjnodes",
-              "ver": "1.2.2",
-              "Node name for S&R": "ColorMatch"
+              }
             },
             "widgets_values": [
               "mkl",
@@ -13294,10 +13322,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.4950000000000115,
+      "scale": 0.4950000000000051,
       "offset": [
-        -262.91294482452577,
-        1462.7695411403147
+        191.3619329484926,
+        1563.294168146206
       ]
     },
     "frontendVersion": "1.34.9",
