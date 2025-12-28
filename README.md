@@ -1,6 +1,6 @@
 # comfyUI-LongLook
 
-**Towardsconsistent motion and prompt adherence for Wan 2.2 video generation.**
+**Towards consistent motion and prompt adherence for Wan 2.2 video generation.**
 
 **TL;DR:**
 - **Chunked generation (best and most reliable use case)**: Stable motion provides clean anchors AND makes the next chunk far more likely to correctly continue the direction of a given action
