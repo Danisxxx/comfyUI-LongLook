@@ -27,4 +27,4 @@ NODE_DISPLAY_NAME_MAPPINGS = {
 __all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]
 
 WEB_DIRECTORY = None
-__version__ = "3.0.4"
+__version__ = "3.0.5"

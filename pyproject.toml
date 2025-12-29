@@ -1,6 +1,6 @@
 [project]
 name = "comfyui-longlook"
-version = "3.0.4"
+version = "3.0.5"
 description = "FreeLong spectral blending for Wan 2.2 video generation with improved motion consistency and prompt adherence"
 license = { text = "MIT" }
 readme = "README.md"
