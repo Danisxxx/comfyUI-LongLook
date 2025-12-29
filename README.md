@@ -5,8 +5,9 @@
 **Towards consistent motion and prompt adherence for Wan 2.2 video generation.**
 
 **TL;DR:**
-- **Chunked generation (best and most reliable use case)**: Stable motion provides clean anchors AND makes the next chunk far more likely to correctly continue the direction of a given action
-- **Single generation**: Can smooth motion reversal and "ping-pong" in 81+ frame generations.
+- **Primary value**: Improved motion consistency *within* 81 frames - smoother trajectories, less reversal, better prompt adherence
+- **Chunked generation (best use case)**: Because each 81-frame chunk is more consistent, you get clean anchors and reliable continuation for unlimited length videos
+- **Single generation 81+ frames**: May help sometimes, but results vary - the real benefit is consistency within the native window
 
 Works with both **i2v** (image-to-video) and **t2v** (text-to-video), though i2v sees the most benefit due to anchor-based continuation.
 
@@ -208,12 +209,13 @@ Single generation with FreeLong for improved motion consistency.  This workflow 
 - Unlimited chunk count
 - 8GB+ VRAM compatible
 
-## Experimental: Beyond 81 Frames
+## Note: Beyond 81 Frames
 
-FreeLong was designed to extend beyond training length. You may be able to generate 97, 113, or more frames in a single pass. Trade-offs:
-- VRAM scales with frame count
-- Quality may degrade at extreme lengths
-- Chunking approach is proven stable
+While FreeLong was originally designed to extend beyond training length, results for single generations beyond 81 frames are inconsistent. You may see improvement, or you may not.
+
+**The primary value of this implementation is consistency *within* the 81-frame window** - which is exactly why it makes chunked generation so reliable. Each chunk benefits from better motion consistency, giving you clean anchors for continuation.
+
+If you need longer videos, chunking is the proven approach.
 
 ## Requirements
 
