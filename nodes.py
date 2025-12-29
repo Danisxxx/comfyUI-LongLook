@@ -44,14 +44,17 @@ class WanContinuationConditioning:
                     "step": 4,
                     "tooltip": "Output video length in frames. Must match your sampler settings."
                 }),
-            }
+            },
+            "optional": {
+                "end_images": ("IMAGE",),
+            },
         }
 
     RETURN_TYPES = ("CONDITIONING", "CONDITIONING", "LATENT")
     RETURN_NAMES = ("positive", "negative", "latent")
     FUNCTION = "modify_conditioning"
     CATEGORY = "video/wan"
-    DESCRIPTION = "Creates i2v conditioning from last frame for video continuation"
+    DESCRIPTION = "Creates i2v conditioning from last frame with optional end-frame guidance"
 
     def modify_conditioning(
         self,
@@ -61,7 +64,8 @@ class WanContinuationConditioning:
         vae,
         width: int,
         height: int,
-        video_length: int
+        video_length: int,
+        end_images: Optional[torch.Tensor] = None
     ) -> Tuple[list, list, Dict[str, torch.Tensor]]:
         """
         Modify conditioning to use anchor frames for continuation.
@@ -74,24 +78,40 @@ class WanContinuationConditioning:
         latent_w = width // 8
 
         # Get the LAST frame from anchor images (single frame continuation like standard i2v)
-        frames_to_encode = anchor_images[-1:]  # Always use just the last frame
+        start_frame = anchor_images[-1:]  # Always use just the last frame
+
+        end_frame = None
+        if end_images is not None:
+            end_frame = end_images[-1:]  # Use last frame as end anchor
 
         # Resize to target dimensions if needed
-        if frames_to_encode.shape[1] != height or frames_to_encode.shape[2] != width:
-            frames_to_encode = comfy.utils.common_upscale(
-                frames_to_encode.movedim(-1, 1),
+        if start_frame.shape[1] != height or start_frame.shape[2] != width:
+            start_frame = comfy.utils.common_upscale(
+                start_frame.movedim(-1, 1),
                 width, height, "bilinear", "center"
             ).movedim(1, -1)
+
+        if end_frame is not None and (end_frame.shape[1] != height or end_frame.shape[2] != width):
+            end_frame = comfy.utils.common_upscale(
+                end_frame.movedim(-1, 1),
+                width, height, "bilinear", "center"
+            ).movedim(1, -1)
+        if end_frame is not None and (end_frame.device != start_frame.device or end_frame.dtype != start_frame.dtype):
+            end_frame = end_frame.to(device=start_frame.device, dtype=start_frame.dtype)
 
         # Create full video tensor for VAE encoding (matches WanImageToVideo exactly)
         # Gray (0.5) for frames to generate, actual image for first frame
         full_video = torch.ones(
             video_length, height, width, 3,
-            device=frames_to_encode.device, dtype=frames_to_encode.dtype
+            device=start_frame.device, dtype=start_frame.dtype
         ) * 0.5
 
-        # Place the single anchor frame at the beginning
-        full_video[:1] = frames_to_encode[:, :, :, :3]
+        # Place the start anchor at the beginning
+        full_video[:1] = start_frame[:, :, :, :3]
+
+        # Optionally place end anchor at the end
+        if end_frame is not None:
+            full_video[-1:] = end_frame[:, :, :, :3]
 
         # VAE encode the entire video (anchor frames + gray neutral frames)
         concat_latent_image = vae.encode(full_video)
@@ -105,18 +125,32 @@ class WanContinuationConditioning:
         # Formula: ((1 - 1) // 4) + 1 = 1
         anchor_latent_frames = 1
 
-        # Create concat_mask using LATENT frames (like WanImageToVideo does - simpler, no reshape)
-        # Shape: [1, 1, latent_frames, h, w]
-        # Wan convention: 0.0 = preserve (don't denoise), 1.0 = generate (full denoise)
-        concat_mask = torch.ones(
-            1, 1, encoded_latent_frames,
-            concat_latent_image.shape[-2],
-            concat_latent_image.shape[-1],
-            device=frames_to_encode.device, dtype=frames_to_encode.dtype
-        )
-
-        # Preserve anchor latent frames
-        concat_mask[:, :, :anchor_latent_frames] = 0.0
+        if end_frame is None:
+            # Create concat_mask using LATENT frames (like WanImageToVideo does - simpler, no reshape)
+            # Shape: [1, 1, latent_frames, h, w]
+            # Wan convention: 0.0 = preserve (don't denoise), 1.0 = generate (full denoise)
+            concat_mask = torch.ones(
+                1, 1, encoded_latent_frames,
+                concat_latent_image.shape[-2],
+                concat_latent_image.shape[-1],
+                device=start_frame.device, dtype=start_frame.dtype
+            )
+            # Preserve anchor latent frames
+            concat_mask[:, :, :anchor_latent_frames] = 0.0
+        else:
+            # Core-style frame mask with end-frame preservation, then reshape to latent mask
+            frame_mask = torch.ones(
+                1, 1, encoded_latent_frames * 4,
+                concat_latent_image.shape[-2],
+                concat_latent_image.shape[-1],
+                device=start_frame.device, dtype=start_frame.dtype
+            )
+            frame_mask[:, :, :start_frame.shape[0] + 3] = 0.0
+            frame_mask[:, :, -end_frame.shape[0]:] = 0.0
+            concat_mask = frame_mask.view(
+                1, frame_mask.shape[2] // 4, 4,
+                frame_mask.shape[-2], frame_mask.shape[-1]
+            ).movedim(1, 2)
 
         # Move to CPU for conditioning storage
         concat_latent_image = concat_latent_image.cpu()
