@@ -177,7 +177,7 @@ Creates i2v conditioning from previous chunk's last frame.
 | height | 512 | Output video height |
 | video_frames | 81 | Frames to generate |
 
-**Inputs**: `positive`, `negative`, `anchor_images` (from previous VAE decode), `vae`
+**Inputs**: `positive`, `negative`, `anchor_images` (from previous VAE decode), `vae`, optional `end_images`
 
 ## Workflows
 
