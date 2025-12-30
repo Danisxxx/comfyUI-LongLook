@@ -11,6 +11,7 @@ from .nodes import (
     WanFreeLong,
     WanFreeLongEnforcer,
     WanMotionScale,
+    WanMotionScaleAdvanced,
 )
 
 NODE_CLASS_MAPPINGS = {
@@ -18,6 +19,7 @@ NODE_CLASS_MAPPINGS = {
     "WanFreeLong": WanFreeLong,
     "WanFreeLongEnforcer": WanFreeLongEnforcer,
     "WanMotionScale": WanMotionScale,
+    "WanMotionScaleAdvanced": WanMotionScaleAdvanced,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -25,6 +27,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "WanFreeLong": "Wan FreeLong",
     "WanFreeLongEnforcer": "Wan FreeLong Enforcer",
     "WanMotionScale": "Wan Motion Scale (Experimental)",
+    "WanMotionScaleAdvanced": "Wan Motion Scale Advanced (Experimental)",
 }
 
 __all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]

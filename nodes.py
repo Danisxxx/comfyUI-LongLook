@@ -1078,3 +1078,138 @@ class WanMotionScale:
         logger.info("=" * 60)
 
         return (model,)
+
+
+# ============================================================================
+# WanMotionScaleAdvanced - Experimental RoPE controls including theta
+# ============================================================================
+
+class WanMotionScaleAdvanced:
+    """
+    Advanced motion scaling with theta control for Wan video generation.
+
+    Extends the basic Motion Scale with access to RoPE theta parameter,
+    which controls the base frequency of position embeddings.
+
+    WARNING: This is experimental. Theta modification changes fundamental
+    model behavior and may produce unexpected results.
+    """
+
+    @classmethod
+    def INPUT_TYPES(cls) -> Dict[str, Any]:
+        return {
+            "required": {
+                "model": ("MODEL",),
+                "enabled": ("BOOLEAN", {
+                    "default": True,
+                    "tooltip": "Enable/disable all modifications."
+                }),
+            },
+            "optional": {
+                "scale_t": ("FLOAT", {
+                    "default": 1.0,
+                    "min": -10.0,
+                    "max": 10.0,
+                    "step": 0.05,
+                    "tooltip": "Temporal scale. >1 = faster motion, <1 = slower. Same as basic Motion Scale."
+                }),
+                "scale_y": ("FLOAT", {
+                    "default": 1.0,
+                    "min": -10.0,
+                    "max": 10.0,
+                    "step": 0.05,
+                    "tooltip": "Height/Y position scale."
+                }),
+                "scale_x": ("FLOAT", {
+                    "default": 1.0,
+                    "min": -10.0,
+                    "max": 10.0,
+                    "step": 0.05,
+                    "tooltip": "Width/X position scale."
+                }),
+                "theta": ("FLOAT", {
+                    "default": 10000.0,
+                    "min": 100.0,
+                    "max": 1000000.0,
+                    "step": 100.0,
+                    "tooltip": "RoPE base frequency (default 10000 = Wan's training). Higher theta (20000-50000) = longer effective context, frames appear 'closer together' - may help >81 frame generations stay coherent. Lower theta (2000-5000) = frames seem 'further apart' temporally, may increase motion intensity or cause instability. EXPERIMENTAL - start with small changes."
+                }),
+            }
+        }
+
+    RETURN_TYPES = ("MODEL",)
+    RETURN_NAMES = ("model",)
+    FUNCTION = "patch_model"
+    CATEGORY = "video/wan"
+    DESCRIPTION = "Advanced motion control with theta - EXPERIMENTAL"
+
+    def patch_model(
+        self,
+        model,
+        enabled: bool,
+        scale_t: float = 1.0,
+        scale_y: float = 1.0,
+        scale_x: float = 1.0,
+        theta: float = 10000.0,
+    ):
+        """
+        Patch the model with advanced RoPE modifications including theta.
+        """
+        if not enabled:
+            logger.info("[WanMotionScaleAdvanced] DISABLED - Model returned without patching")
+            return (model,)
+
+        # Check if anything is actually being changed
+        no_scale = (scale_t == 1.0 and scale_y == 1.0 and scale_x == 1.0)
+        default_theta = (theta == 10000.0)
+
+        if no_scale and default_theta:
+            logger.info("[WanMotionScaleAdvanced] All values at default - Model returned without patching")
+            return (model,)
+
+        logger.info("=" * 60)
+        logger.info("[WanMotionScaleAdvanced] ADVANCED ROPE MODIFICATIONS")
+        logger.info("=" * 60)
+        if scale_t != 1.0:
+            logger.info(f"  Temporal Scale (scale_t): {scale_t:.2f}x")
+        if scale_y != 1.0:
+            logger.info(f"  Height Scale (scale_y): {scale_y:.2f}x")
+        if scale_x != 1.0:
+            logger.info(f"  Width Scale (scale_x): {scale_x:.2f}x")
+        if not default_theta:
+            logger.info(f"  Theta: {theta:.0f} (default: 10000)")
+            if theta > 10000:
+                logger.info(f"    → Higher theta = longer effective context window")
+            else:
+                logger.info(f"    → Lower theta = positions cycle faster")
+        logger.info("=" * 60)
+
+        model = model.clone()
+
+        # Apply scale options via rope_options (same mechanism as basic Motion Scale)
+        if not no_scale:
+            rope_options = {
+                "scale_t": scale_t,
+                "scale_y": scale_y,
+                "scale_x": scale_x,
+            }
+            model.model_options.setdefault("transformer_options", {})["rope_options"] = rope_options
+            logger.info("[WanMotionScaleAdvanced] rope_options (scales) added to transformer_options")
+
+        # Apply theta modification directly to the rope_embedder
+        if not default_theta:
+            try:
+                # Access the diffusion model's rope_embedder
+                diffusion_model = model.model.diffusion_model
+                if hasattr(diffusion_model, 'rope_embedder'):
+                    original_theta = diffusion_model.rope_embedder.theta
+                    diffusion_model.rope_embedder.theta = theta
+                    logger.info(f"[WanMotionScaleAdvanced] rope_embedder.theta: {original_theta} → {theta}")
+                else:
+                    logger.warning("[WanMotionScaleAdvanced] Model does not have rope_embedder - theta not applied")
+            except Exception as e:
+                logger.error(f"[WanMotionScaleAdvanced] Failed to set theta: {e}")
+
+        logger.info("=" * 60)
+
+        return (model,)
