@@ -168,6 +168,9 @@ Control motion speed by scaling temporal position embeddings. Works with both **
 - **t2v**: Can help adjust aspect ratio of generations
 - **i2v**: Can produce wild spatial effects - experimental
 
+### WanMotionScaleAdvanced
+*Work in progress - not yet fully documented.* Experimental node with additional RoPE controls including theta adjustment for potential >81 frame coherence improvements.
+
 ### WanContinuationConditioning
 Creates i2v conditioning from previous chunk's last frame.
 
